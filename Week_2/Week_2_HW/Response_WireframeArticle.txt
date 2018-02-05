@@ -1,0 +1,5 @@
+I do feel the article makes a lot of sense in terms of knowing the purposes of your project. 
+Because I consider a clear purpose would help with a better design process. 
+To quote, "Before you start planning a solution, know the problem."
+So I would consider questions such as for whom? Why? before I start the project, and then consider how and what to design.
+And I realize I would need to be active in the process and ask for feedback as I proceed.

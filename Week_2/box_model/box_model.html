@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model Pixels</title>
+	<!-- Internal style sheet, applies to only this page -->
+	<style type="text/css">
+		/* tag selector to apply all divs by default on our page */
+
+		html{
+			font-size: 20px; /*our base font size*/
+		}
+
+		div{
+			border-width: 2px;
+			border-color: teal;
+			/* if border-color have four values, top-right-down-left
+		                        two values, top&down - right&left*/
+			border-style: solid;
+			height: 20px;
+			/* dif betw height&min-height*/
+			overflow: visible; /* default is visible */
+			border: 5px solid RebeccaPurple; /* shorthand version for above, will overwrite them as CSS read up to dowm*/
+		}
+
+		/* class selectors apply only to the elements that receive the class attribute that matches*/
+		.container{
+			width: 900px;
+			margin: 0 auto; /*0 for top&bottom, auto center for left&right*/
+		}
+		/* now we want to make each of the thumbs stack horizontally*/
+		.thumbnail{
+			border: 1px solid blue; /*if there's a border, it adds to */
+			width: 298px;
+			height: 300px;
+			float: left;
+		}
+		
+		/* ??????????? */
+		/*
+		br.clear{
+			clear: both;
+		}
+
+		.clear-fix-1{
+			overflow: auto;
+		}
+		*/
+		
+		/* insert an invisible element
+		this is the proper way to clear out floats
+		the rule of thumb is after you float, you have to clear :both;
+		::after is a pseudo class selector, this inserts an element via css called after
+		it receives content, clears both; */
+		.clearfix::after{
+			content: "";
+			clear: both;
+			display: block;
+		}
+		
+		/* padding add dimensions of inside
+		margin add dimensions of surround content*/
+		.thumbnail-padding {
+			border: 5px solid red;
+			width: 270px;
+			height: 270px;
+			padding: 10px;
+			float: left;
+		}
+
+		.thumbnail-margin {
+			border: 5px solid red;
+			width: 270px;
+			height: 270px;
+			margin: 10px;
+			float: left;
+		}
+
+		.thumbnail-box {
+			box-sizing: border-box;
+			width: 300px;
+			height: 300px;
+			padding: 10px;
+			border: 5px solid grey;
+			float: left;
+
+		}
+		
+
+		/* in-line elements have default margin of a percentage of your font size*/
+		.container-in{
+			width: 1000px;
+			margin: 0 auto;
+			font-size: 0;
+		}
+		.thumbnail-in{
+			box-sizing: border-box;
+			width: 25%;
+			border: 3px solid black;
+			display: inline-block;
+			font-size: 1rem /*rem = base font size*/
+
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container clearfix">
+		<div class="thumbnail"></div>
+		<div class="thumbnail"></div>
+		<div class="thumbnail"></div>
+	</div>
+
+	<div class="container clearfix">
+		<div class="thumbnail-padding"></div>
+		<div class="thumbnail-padding"></div>
+		<div class="thumbnail-padding "></div>
+	</div>
+	
+	<div class="container clearfix">
+		<div class="thumbnail-margin"></div>
+		<div class="thumbnail-margin"></div>
+		<div class="thumbnail-margin "></div>
+	</div>
+
+	<div class="container clearfix">
+		<div class="thumbnail-box"></div>
+		<div class="thumbnail-box"></div>
+		<div class="thumbnail-box "></div>
+	</div>
+
+	<div class="container-in">
+		<div class="thumbnail-in"> hello </div>
+		<div class="thumbnail-in"> world </div>
+		<div class="thumbnail-in "> foo </div>
+		<div class="thumbnail-in "> bar </div>
+	</div>
+</body>
+</html>
