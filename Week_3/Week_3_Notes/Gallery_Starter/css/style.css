@@ -1,0 +1,119 @@
+/*@import url('https://fonts.googleapis.com/css?family=Amatic+SC');*/
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+/*font-family: 'Amatic SC', cursive;*/
+
+html{
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	/*some prefixes*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+html,
+body{
+	margin: 0;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+}
+
+/*we want to absolutely position text relative to image*/
+.container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 75px;
+}
+
+.polaroid{
+	position: relative;
+	width: 240px;
+	/*what does inline-block do???*/
+	display: inline-block;
+	margin: 20px;
+}
+
+.polaroid img{
+	width: 100%;
+	/*100% of its block*/
+	height: auto;
+	/*keeps aspect ratio of photo*/
+	border: 10px solid #CCC;
+	border-bottom-width: 45px;
+	/*horizontal shadow width | vertical shadow width | blur | spread | color*/
+	/*box shadow only works in new browsers*/
+	/*so prefix them*/
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+	-moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+	box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+}
+
+.polaroid p{
+	position: absolute;
+	/*the other elements such as images would
+	 ignore position-absolute elements*/
+	width: 100%;
+	text-align: center; 
+	bottom: 0;
+}
+
+/*Nav Bar Styles*/
+header{
+	width: 80%;
+	padding: 0 10%;
+	height: 50px;
+	position: fixed;
+	margin-bottom: 10px;
+	/*whats this???*/
+	z-index: 10;
+	background-color: black; 
+	background: url(../img/classy_fabric/classy_fabric.png);
+}
+
+header h1{
+	color: white;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	/*!!!only takes up space of how much content is needed there*/
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+}
+
+nav{
+	float: right;
+	display: inline-block;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(40, 40, 40, 0); 
+}
+
+nav li{
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	width: 120px;
+	display: inline-block;
+}
+
+nav a{
+	text-decoration: none;
+	color: grey;
+	display: block;
+	transition: background-color 0.5s;
+}
+
+nav a:hover{
+	background-color: rgba(40, 40, 40, 1);
+}
+
+nav a.active{
+	background-color: rgba(40, 40, 40, 1);
+	color: white;
+}

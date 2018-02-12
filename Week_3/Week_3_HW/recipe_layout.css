@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+
+body{
+	background-color: lightyellow;
+	font-family: 'Neucha', cursive;
+}
+
+a{
+	color: grey;
+}
+
+header img{
+	margin: 5px auto;
+	display: block;
+}
+
+nav a{
+	color: grey;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+nav a:hover{
+	color:black;
+	text-decoration: underline;
+}
+
+nav.overall{
+	list-style-type: none;
+	font-size: 24px;
+
+	width: 1024px;
+	height: 30px;
+
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+}
+
+nav.overall ul{
+	width: 450px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+nav.overall li{
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+	float: left;
+}
+
+nav.progress{
+	width: 1024px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 5px; 
+}
+
+main{
+	border: 2px solid grey;
+	width: 1024px;
+	margin: 0 auto;
+	padding: 10px ;
+	line-height:1.5;
+}
+
+main img{
+	width: 360px;
+	float: left;
+}
+
+aside{
+	width: 360px;
+	padding-top: 5px;
+}
+
+aside ul{
+	margin: 0;
+}
+aside h2{
+	text-align: center;
+	margin: 0;
+}
+
+article h1{
+	text-align: center;
+	margin: 5px;
+}
+
+article ol{
+	width:600px;
+	margin: 0;
+	float: right;
+}
+
+footer{
+	margin:10px auto;
+	text-align: center;
+}
+
+

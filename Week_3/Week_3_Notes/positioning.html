@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning</title>
+	<style type="text/css">
+	html,
+	body
+	h1{
+		margin: 0;
+	}
+
+
+	header,
+	footer{
+		min-height: 50px;
+		background-color: black;
+		color: white;
+	}
+
+	header{
+		/*no matter scrolling streching, always stays*/
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	footer{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	/*we need to do this to make sure we can see the content that our fixed heading is covering*/
+	main{
+		padding-top: 100px;
+	}
+
+	.absolute-t-r{
+		width: 200px;
+		height: 200px;
+		border: 3px solid grey;
+		position: absolute;
+		top: 30px;
+		right: 50px;
+	}
+	.relative-t-r{
+		width: 200px;
+		height: 200px;
+		border: 3px solid black;
+		position: relative;
+		top: 30px;
+		right: 50px;
+	}
+
+	.abs-in-rel{
+		width: 100px;
+		height:100px;
+		border:3px solid green;
+		position: absolute;
+		top: 0;
+		left: 50px;
+	}
+
+	.relative-wrapper{
+		position: relative;
+		/*based on browser window viewport height*/
+		height: 100vh;
+		width: 90vw;
+		border: 3px dotted purple;
+	}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Fixed Position Header</h1>
+	</header>
+
+	<main>
+		<div class="absolute-t-r">
+			I'm a absolutely positioned div.
+			I will be default position myself based on the corner of the browser window.
+		</div>
+
+		<div class="relative-t-r">
+			I'm a relatively positioned div.
+			I will position myself relative to where I should have rendered by default.
+		</div>
+		
+		<div class="relative-wrapper">
+			<div class="abs-in-rel">
+				I'm an absolutely positioned div inside a relatively positioned div.
+				
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		Fixed Position Footer
+	</footer>
+
+</body>
+</html>
