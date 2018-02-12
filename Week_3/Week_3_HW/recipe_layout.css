@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha');
 
 body{
-	background-color: lightyellow;
 	font-family: 'Neucha', cursive;
 }
 
@@ -60,7 +59,9 @@ nav.progress{
 }
 
 main{
-	border: 2px solid grey;
+	background-color: lightyellow;
+	border: 2px grey;
+	border-style: solid dashed;
 	width: 1024px;
 	margin: 0 auto;
 	padding: 10px ;
