@@ -1,0 +1,30 @@
+Concept|theme of site:
+I plan to create a blog dicussing games,
+including monthly game recommendation (with short commentaries),
+game analysis articles,
+and random creative idea blog posts.
+There would be images used to illustrate the games.
+
+Site map and wireframes: see images in this folder.
+
+An existing website I drew inspiration from:
+http://www.thatvideogameblog.com/
+
+Pinterest collection/Mood Board:
+https://www.pinterest.com/alexyixuan/game-blog/
+
+Concepts|skills we have covered that I will use:
+importing fonts;
+importing images;
+different header sizes;
+navigation bar;
+transform text when hover;
+align elements to center;
+fixed header;
+position elements inline;
+absolutely position text relative to image;
+margins & paddings;
+linking pages;
+
+Concepts|skills I need to still learn to complete the project:
+sliding images
