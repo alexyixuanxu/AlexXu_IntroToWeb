@@ -1,6 +1,9 @@
 # Alex Yixuan Xu
 [Midterm proposal is posted on this repo]
 
+(http://sites.bxmc.poly.edu/~yixuanxu/TheUnknownGameBlog/Home.html) [Midterm Website hosted live]
+Below is my midterm documentation.
+
 I started coding the website by first doing an html markup for each page.
 I put placeholder links to images, texts and notes for future code.
 Also at this point, I try to link all pages together.
