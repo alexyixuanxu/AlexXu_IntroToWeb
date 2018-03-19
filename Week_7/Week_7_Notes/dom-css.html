@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic CSS Toggle</title>
+	<style type="text/css">
+		.active{
+			background-color: lightblue;
+			color: white;
+			font-size: 60px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="changeMe" onclick="changeCSS() class='active';">This is a header, click to change my css class!
+	</h1>
+
+	<script type="text/javascript">
+		function changeCSS(){
+			//grab our h1 element and place it in a variable
+			var element = document.getElementById('changeMe');
+			// use a conditional to check if the class active is in the classlist
+			console.log(classList);
+			if (element.classList.contains('active')){
+				element.classList.remove('active');
+				element.innerHTML = "I am no longer active";
+			}
+			// if the active class does not exist, we want to add it
+			else{
+				element.classList.add('active');
+				element.innerHTML = 'I am now active';
+			}
+		
+		}
+	</script>
+</body>
+</html>
