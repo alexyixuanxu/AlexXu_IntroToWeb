@@ -1,0 +1,97 @@
+/*import fonts for website*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+body{
+	background-color: darkgrey;
+}
+
+p{
+	font-size: 14px;
+}
+
+header{
+	width: 100%;
+	text-align: center;
+}
+
+header H1{
+	background-color: darkgrey;
+	padding: 10px;
+
+}
+
+/*this is the title link to home page*/
+a{
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s;
+	font-family: 'Handlee', cursive;
+	font-weight: 400;
+}
+
+a:hover{
+	color: rgb(184,1,65);
+}
+
+nav{
+	display: block;
+	text-align: center;
+	background-color: black;
+	min-height: 40px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+nav ul li a{
+	color: white;
+	transition: all 0.5s;
+}
+
+nav ul li a:hover{
+	color: rgb(184,1,65);
+}
+
+nav ul li a.Pressed{
+	color: rgb(184,1,65);
+	text-decoration: underline;
+}
+
+main{
+	background-color: darkgrey;
+}
+
+main div.Container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: black;
+	margin: 10px 0 0 0;
+}
+
+footer p{
+	text-align: center;
+	color: lightgrey;
+	font-family: 'Handlee', cursive;
+	font-weight: 400;
+	font-size: 12px;
+}

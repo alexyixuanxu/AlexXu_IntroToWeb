@@ -1,0 +1,28 @@
+main div.Container{
+	width: 600px;
+	margin: 0 auto;
+}
+
+H2{
+	text-align: center;
+	padding: 10px;
+}
+
+.Date{
+	text-align: center;
+}
+
+img{
+	max-width:600px;
+	height: auto; 
+}
+
+img.Spoiler{
+	margin: 20px 0;
+	filter: blur(20px);
+	transition: all 0.8s;
+}
+
+img.Spoiler:hover{
+	filter: blur(0);
+}

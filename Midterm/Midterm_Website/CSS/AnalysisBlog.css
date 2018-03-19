@@ -1,0 +1,49 @@
+main p.Note{
+	text-align: center;
+	padding-top: 10px;
+}
+
+div.PostContainer{
+	margin: 10px 20px;
+	min-height: 200px;
+	border: solid 5px black;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+div.PostContainer:hover{
+	border: solid 5px rgb(184,1,65);
+	background-color: grey;
+}
+
+main div img{
+	float: left;
+	margin: 20px;
+	filter: grayscale(100%);
+	transition: all 0.5s;
+}
+
+main div img:hover{
+	filter: grayscale(0);
+}
+
+main div a{
+	float: right;
+	width: 560px;
+	max-height: 150px;
+	padding: 20px 0;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+main div a:hover{
+	color: white;
+	background-color: rgb(184,1,65);
+}
+
+main div p.Date{
+	float: right;
+	width: 560px;
+	text-align: center;
+	padding: 20px;
+}

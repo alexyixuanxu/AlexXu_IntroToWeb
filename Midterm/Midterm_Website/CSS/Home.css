@@ -1,0 +1,136 @@
+/* Slideshow container */
+.SlideshowContainer{
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.Slide{
+    display: none;
+}
+
+/* Next & previous buttons */
+.PrevButtom, .NextButtom {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.NextButtom {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.PrevButtom:hover, .NextButtom:hover {
+  color: white;
+  background-color: rgba(184,1,65,0.8);
+}
+
+/* Caption text */
+.Slide H3{
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 50px;
+  padding-top: 12px;
+  text-align: center;
+
+  color: white;
+  background-color: rgba(184,1,65,0.8);
+  transition: all 0.5s;
+}
+
+.Slide H3:hover{
+  text-decoration: underline;
+}
+
+.Slide H2{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+
+  color: lightgrey;
+}
+
+
+/* The dots/bullets/indicators */
+.Dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.6s;
+}
+
+.active, .Dot:hover {
+  background-color: rgb(184,1,65);
+}
+
+/*Latest Posts*/
+.PostContainer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 20px 48px;
+}
+
+.PostContainer img{
+  width: 300px;
+  height: auto;
+  transition: all 0.5s;
+}
+
+.PostContainer img:hover{
+  border: solid 15px black;
+}
+
+.PostContainer H3{
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  left: 0px;
+  top: 0;
+  text-align: center;
+  padding-top: 8px;
+
+  color: white;
+  background-color: rgba(184,1,65,0.8);
+  transition: all 0.5s;
+}
+
+
+.PostContainer H3:hover{
+  text-decoration: underline;
+}
+
+.PostContainer H2{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  text-align: center; 
+  bottom: 20px;
+  padding: 20px;
+  
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+  transition: all 0.5s;
+}
+
+.PostContainer H2:hover{
+  color: rgb(184,1,65);
+  background-color: rgba(0,0,0,1);
+}
