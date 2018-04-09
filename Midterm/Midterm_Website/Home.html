@@ -118,11 +118,29 @@
 		</div>
 
 	</main>
+	<div id="RunAnimation">
+		<div id="RunningBox">
+		</div>
+	</div>
+
+	<script>
+		var boxPosition = 0;
+		var boxSpeed = 10;
+		function BoxRun() {
+			var box = document.getElementById("RunningBox");
+			boxPosition += boxSpeed;
+			box.style.left = boxPosition + 'px';
+		}
+	</script>
 
 	<footer>
 		<p>This site is a random personal game blog.</p>
 		<p>Contact: yx1137@nyu.edu</p>
-		<p>Copyright @TheUnknownGameBlog</p>
+		<p>&copy;TheUnknownGameBlog</p>
+		<div class="RunButton">
+			<button id="RunButton" onclick="BoxRun()">Run!</button>
+		</div>
+		
 	</footer>
 </body>
 </html>

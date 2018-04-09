@@ -1,2 +1,2 @@
 # Alex Yixuan Xu
-To add a javascript element,
+Week 10 HW documentation is in the txt file.

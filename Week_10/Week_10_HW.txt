@@ -1,0 +1,63 @@
+To add a JavaScript function, I wanted to add something fun to the game blog so I decided to add a button where pressing the button would create some mini animation.
+So I added a button on the buttom of the home page:
+<div class="RunButton">
+	<button id="RunButton" onclick="BoxRun()">Run!</button>
+</div>
+
+In css, I stylized the button: 
+button#RunButton{
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: rgb(184,1,65);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 #999;
+
+	font-family: 'Handlee', cursive;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+button#RunButton:hover {
+	background-color: rgb(256,1,65);
+}
+
+button#RunButton:active {
+	background-color: rgb(256,1,65);
+	box-shadow: 0 2px 2px 0 #666;
+	transform: translateY(2px);
+}
+
+
+And the function is that when pressing the button, a block (just above the footer) would move a certain distance:
+<div id="RunAnimation">
+	<div id="RunningBox">
+	</div>
+</div>
+
+<script>
+	var boxPosition = 0;
+	var boxSpeed = 10;
+	function BoxRun() {
+		var box = document.getElementById("RunningBox");
+		boxPosition += boxSpeed;
+		box.style.left = boxPosition + 'px';
+	}
+</script>
+
+Here is the style of the css:
+div#RunAnimation{
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+div#RunningBox{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 0;
+	background-color: black;
+}
