@@ -1,0 +1,8 @@
+For final, I decided to keep working on the game blog I did for midterm.
+Something to change:
+1. Have all original content for the pages
+2. Make the website responsive for different screen sizes
+3. Embed some p5.js sketches in the website
+4. Add more javascript for people to interact with e.g, press a button to change component on the page;
+ fade in animation for game recommendation page using GreenSock
+
