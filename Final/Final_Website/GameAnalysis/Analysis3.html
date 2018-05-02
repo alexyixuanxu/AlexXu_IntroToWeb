@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Unknown Game Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/GeneralStyle.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/SingleAnalysisBlog.css">
+</head>
+
+<body>
+	<header>
+		<H1><a href="../Home.html">The Unknown Game Blog</a></H1>
+		<nav>
+			<div class="dropdown">
+			  <div onclick="toggleDropdown()" class="dropbtn"></div>
+			  <ul id="myDropdown" class="dropdown-content">
+			    <li><a href="../GameRecommendation.html">Game Recommendation</a></li>
+			    <li><a href="../GameAnalysis.html" class="Pressed">Game Analysis</a></li>
+			    <li><a href="../CreativityBlog.html">Creativity Blog</a></li>
+			  </ul>
+			</div>
+
+			<ul id="NavBar">
+				<li><a href="../GameRecommendation.html">Game Recommendation</a></li>
+				<li><a href="../GameAnalysis.html" class="Pressed">Game Analysis</a></li>
+				<li><a href="../CreativityBlog.html">Creativity Blog</a></li>
+			</ul>
+		</nav>
+		<script src="../js/dropdown.js"></script>
+	</header>
+
+	<main>
+		<div class="Container">
+			<H2>Sorry, the page you are viewing is temporarily unavailable.</H2>
+			<div id="box"></div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+			<script type="text/javascript">
+				var box = document.getElementById('box');
+				TweenMax.to(box, 1,
+				{
+					scale: 0.7,
+					repeat:-1
+				})
+
+			</script>
+	
+		</div>
+	</main>
+
+	<footer>
+		<p>This site is a random personal game blog.</p>
+		<p>Contact: yx1137@nyu.edu</p>
+		<p>Copyright @TheUnknownGameBlog</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Unknown Game Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/GeneralStyle.css">
+	<link rel="stylesheet" type="text/css" href="CSS/AnalysisBlog.css">
+</head>
+
+<body>
+	<header>
+		<H1><a href="Home.html">The Unknown Game Blog</a></H1>
+		<nav>
+			<div class="dropdown">
+			  <div onclick="toggleDropdown()" class="dropbtn"></div>
+			  <ul id="myDropdown" class="dropdown-content">
+			    <li><a href="GameRecommendation.html">Game Recommendation</a></li>
+			    <li><a href="GameAnalysis.html" class="Pressed">Game Analysis</a></li>
+			    <li><a href="CreativityBlog.html">Creativity Blog</a></li>
+			  </ul>
+			</div>
+
+			<ul id="NavBar">
+				<li><a href="GameRecommendation.html">Game Recommendation</a></li>
+				<li><a href="GameAnalysis.html" class="Pressed">Game Analysis</a></li>
+				<li><a href="CreativityBlog.html">Creativity Blog</a></li>
+			</ul>
+		</nav>
+		<script src="js/dropdown.js"></script>
+	</header>
+
+	<main>
+		<div class="Container">
+			<!-- A little note that should be pretty small -->
+			<p class="Note">Trying to strategically analyze games.</p>
+
+			<div class="PostContainer">
+				<img src="Images/ASquare150Inside.jpg">
+				<a href="GameAnalysis/Analysis1.html"><H2>World Building in INSIDE</H2></a>
+				<p class="Date">Date: 2018.04.07</p>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/ASquare150Doki.jpg">
+				<a href="GameAnalysis/Analysis2.html"><H2>Doki Doki Literature Club is an Uncontrollably Horrific Visual Novel</H2></a>
+				<p class="Date">Date: 2017.10.22</p>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/ASquare150Undertale.png">
+				<a href="GameAnalysis/Analysis3.html"><H2>Undertale Review</H2></a>
+				<p class="Date">Date: 2017.08.15</p>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<p>This site is a random personal game blog.</p>
+		<p>Contact: yx1137@nyu.edu</p>
+		<p>&copy;TheUnknownGameBlog</p>
+	</footer>
+</body>
+</html>

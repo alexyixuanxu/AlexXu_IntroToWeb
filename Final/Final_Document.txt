@@ -1,0 +1,75 @@
+Explanation of some source code:
+dropdown menu onclick:
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+function toggleDropdown() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}
+
+Animated button:
+button#RunButton:hover {
+  background-color: rgb(256,1,65);
+}
+button#RunButton:active {
+  background-color: rgb(256,1,65);
+  box-shadow: 0 2px 2px 0 #666;
+  transform: translateY(2px);
+}
+
+
+buttom controlled moving box:
+var boxPosition = 0;
+var boxSpeed = 10;
+function BoxRun() {
+	var box = document.getElementById("RunningBox");
+	boxPosition += boxSpeed;
+	box.style.left = boxPosition + 'px';
+}
+
+Animation timeline:
+<script type="text/javascript">
+	$(document).ready(function(){
+	 var $container1 = $(".Container").eq(0);
+	 var $container2 = $(".Container").eq(1);
+	 var $container3 = $(".Container").eq(2);
+	 var $container4 = $(".Container").eq(3);
+	 var tl = new TimelineLite();
+	 tl.from($container1, 0.8, {top: 50, opacity:0})
+	 .from($container2, 0.8, {top: 50, opacity:0})
+	 .from($container3, 0.8, {top: 50, opacity:0})
+	 .from($container4, 0.8, {top: 50, opacity:0})
+</script>
+
+repeated animation:
+var box = document.getElementById('box');
+TweenMax.to(box, 1,
+{
+	scale: 0.7,
+	repeat:-1
+})
+
+Issues encountered:
+-To center the dropdown menu
+-Problems embedding p5 sketches
+
+What I learned:
+-I needed to review media queries
+-dropdown menus on click
+-jquery animations
+-greensock timeline animations
+
+Next steps:
+-I could use SASS to improve my code, making it more clean.
+-There should be easier way to make a drop down menu using jquery that could simplify my code.

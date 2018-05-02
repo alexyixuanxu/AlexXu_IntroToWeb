@@ -7,7 +7,7 @@ Something to change:
 3. Embed some p5.js sketches in the website
 4. Add more javascript for interactions and animations
 	e.g. 
-	change the slideshow on homepage a little so that the images slide automatically and pause on hover;
+	change the slideshow on homepage a little so that the images slide automatically;
 	press a button to change component on the page, something goofy;
-	create a timeline for animation in game recommendation page using GreenSock
+	create animation in game recommendation page using GreenSock or jquery
 

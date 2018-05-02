@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Unknown Game Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/GeneralStyle.css">
+	<link rel="stylesheet" type="text/css" href="CSS/AnalysisBlog.css">
+</head>
+
+<body>
+	<header>
+		<H1><a href="Home.html">The Unknown Game Blog</a></H1>
+		<nav>
+			<div class="dropdown">
+			  <div onclick="toggleDropdown()" class="dropbtn"></div>
+			  <ul id="myDropdown" class="dropdown-content">
+			    <li><a href="GameRecommendation.html">Game Recommendation</a></li>
+			    <li><a href="GameAnalysis.html">Game Analysis</a></li>
+			    <li><a href="CreativityBlog.html" class="Pressed">Creativity Blog</a></li>
+			  </ul>
+			</div>
+
+			<ul id="NavBar">
+				<li><a href="GameRecommendation.html">Game Recommendation</a></li>
+				<li><a href="GameAnalysis.html">Game Analysis</a></li>
+				<li><a href="CreativityBlog.html" class="Pressed">Creativity Blog</a></li>
+			</ul>
+		</nav>
+		<script src="js/dropdown.js"></script>
+	</header>
+
+	<main>
+		<div class="Container">
+			<!-- A little note that should be pretty small -->
+			<p class="Note">Writing about random creative input, inspirations etc.</p>
+
+			<div class="PostContainer">
+				<img src="Images/CSquare150Orwell.jpg">
+				<a href="CreativityBlog/Blog1.html"><H2>Play Something</H2></a>
+				<p class="Date">Date: 2018.03.05</p>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/CSquare150Persepolis.jpg">
+				<a href="CreativityBlog/Blog2.html"><H2>Good Watches for the Week</H2></a>
+				<p class="Date">Date: 2018.02.07</p>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/CSquare150GGJ.jpg">
+				<a href="CreativityBlog/Blog3.html"><H2>Global Game Jam at NYU Game Center</H2></a>
+				<p class="Date">Date: 2018.01.30</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>This site is a random personal game blog.</p>
+		<p>Contact: yx1137@nyu.edu</p>
+		<p>&copy;TheUnknownGameBlog</p>
+	</footer>
+</body>
+</html>

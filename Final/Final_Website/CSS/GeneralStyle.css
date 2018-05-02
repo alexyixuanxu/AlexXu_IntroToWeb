@@ -1,0 +1,157 @@
+/*import fonts for website*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+body{
+	background-color: darkgrey;
+}
+
+p{
+	font-size: 14px;
+}
+
+header{
+	width: 100%;
+	text-align: center;
+}
+
+header H1{
+	background-color: darkgrey;
+	padding: 10px;
+
+}
+
+/*this is the title link to home page*/
+a{
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s;
+	font-family: 'Handlee', cursive;
+	font-weight: 400;
+}
+
+a:hover{
+	color: rgb(184,1,65);
+}
+
+nav{
+	display: block;
+	text-align: center;
+	background-color: black;
+	height: 40px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+nav ul li a{
+	color: white;
+	transition: all 0.5s;
+}
+
+nav ul li a:hover{
+	color: rgb(184,1,65);
+}
+
+nav ul li a.Pressed{
+	color: rgb(184,1,65);
+	text-decoration: underline;
+}
+
+.dropdown{
+	display: none;
+}
+
+.dropbtn {
+	display: none;
+}
+
+main{
+	background-color: darkgrey;
+}
+
+main div.Container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: black;
+	padding-top: 10px;
+}
+
+footer p{
+	text-align: center;
+	color: lightgrey;
+	font-family: 'Handlee', cursive;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	#NavBar{
+		display: none;
+	}
+
+	/* Dropdown Button */
+	.dropbtn {
+		display: block;
+	    width: 0; 
+	    height: 0; 
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-bottom: 15px solid white;
+	    cursor: pointer;
+	    position: absolute;
+	    margin: auto;
+	}
+
+	/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+		border-bottom: 15px solid transparent;
+		border-top: 15px solid white;
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+
+	    background-color: black;
+	    z-index: 1;
+	    margin-top: 15px;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content li a {
+	    padding: 15px;
+	    display: block;
+	}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;}
+
+}

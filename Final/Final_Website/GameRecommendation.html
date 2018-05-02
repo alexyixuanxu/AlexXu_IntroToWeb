@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Unknown Game Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/GeneralStyle.css">
+	<link rel="stylesheet" type="text/css" href="CSS/GameRecommendation.css">
+</head>
+
+<body>
+	<header>
+		<H1><a href="Home.html">The Unknown Game Blog</a></H1>
+		<nav>
+			<div class="dropdown">
+			  <div onclick="toggleDropdown()" class="dropbtn"></div>
+			  <ul id="myDropdown" class="dropdown-content">
+			    <li><a href="GameRecommendation.html" class="Pressed">Game Recommendation</a></li>
+			    <li><a href="GameAnalysis.html">Game Analysis</a></li>
+			    <li><a href="CreativityBlog.html">Creativity Blog</a></li>
+			  </ul>
+			</div>
+
+			<ul id="NavBar">
+				<li><a href="GameRecommendation.html" class="Pressed">Game Recommendation</a></li>
+				<li><a href="GameAnalysis.html">Game Analysis</a></li>
+				<li><a href="CreativityBlog.html">Creativity Blog</a></li>
+			</ul>
+		</nav>
+		<script src="js/dropdown.js"></script>
+	</header>
+
+	<main>
+		<div class="Container">
+			<img src="Images/SquareLimbo.jpg">
+			<div class="TextContainer">
+				<H2>Limbo</H2>
+				<p>&emsp;&emsp;&emsp;&emsp;Limbo is a puzzle-platform video game developed by independent studio Playdead. The game was released in July 2010 on Xbox Live Arcade, and has since been ported to several other systems, including the PlayStation 3 and Microsoft Windows. Limbo is a 2D side-scroller, incorporating a physics system that governs environmental objects and the player character. The player guides an unnamed boy through dangerous environments and traps as he searches for his sister. The developer built the game's puzzles expecting the player to fail before finding the correct solution. Playdead called the style of play "trial and death", and used gruesome imagery for the boy's deaths to steer the player from unworkable solutions.</p>
+			</div>
+		</div>
+
+		<div class="Container">
+			<img src="Images/SquareCubeEscape.png">
+			<div class="TextContainer">
+				<H2>Cube Escape</H2>
+				<p>&emsp;&emsp;&emsp;&emsp;Cube Escape is a series of Surreal Horror Room Escape games created by Dutch game site Rusty Lake and available to play for free on their website. Unlike many Room Escape games, Cube Escape is noteworthy for having a complex, ongoing, non-linear storyline with surreal themes and visual styling evocative of filmmakers such as Dario Argento, David Lynch and Luis Buñuel. As a result, players can expect a great deal of nightmarish imagery and gore.</p>
+				<p>&emsp;&emsp;&emsp;&emsp;The individual games have quite varied settings and objectives, but which are all linked by mysterious black and white cubes. As the story progresses, the nature of the cubes and their relationship to the mysterious location known as Rusty Lake are gradually revealed.</p>
+			</div>
+		</div>
+
+		<div class="Container">
+			<img src="Images/SquareASM.png">
+			<div class="TextContainer">
+				<H2>Always Sometimes Monsters</H2>
+				<p>&emsp;&emsp;&emsp;&emsp;Always Sometimes Monsters is a role-playing video game created by Justin Amirkhani and Jake Reardon, developed by Vagabond Dog and published by Devolver Digital. </p>
+				<p>&emsp;&emsp;&emsp;&emsp;"Out of money and out of luck, you find yourself heart broken and on the verge of collapse. Your landlord's taken the key back, you can't finish your manuscript, and the one you love is marrying someone else. With no choice but to handle whatever life throws at you, you set out on the open road with a mission to win back the love of your life."</p>
+				<p>&emsp;&emsp;&emsp;&emsp;"The story from there is up to you."</p>
+			</div>
+		</div>
+
+		<div class="Container">
+			<img src="Images/SquareStardew.jpg">
+			<div class="TextContainer">
+				<H2>Stardew Valley</H2>
+				<p>&emsp;&emsp;&emsp;&emsp;Stardew Valley is an indie farming simulation role-playing video game developed by Eric "ConcernedApe" Barone and published by Chucklefish.</p>
+				<p>&emsp;&emsp;&emsp;&emsp;In Stardew Valley, the player takes the role of a character who, to get away from the hustle of an office job, takes over their grandfather's dilapidated farm in a place known as Stardew Valley. The player manages their character's time and energy levels as they clear land, plant and tend crops, raise livestock, craft goods, mine for ores, and engage in social activities, including romances leading towards marriage, with the various residents of the small town, all while earning in-game money to expand their farm. The game is open-ended, allowing the player to take on activities as they see fit.</p>
+			</div>
+		</div>
+		
+
+	</main>
+
+	<footer>
+		<p>This site is a random personal game blog.</p>
+		<p>Contact: yx1137@nyu.edu</p>
+		<p>&copy;TheUnknownGameBlog</p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		 var $container1 = $(".Container").eq(0);
+		 var $container2 = $(".Container").eq(1);
+		 var $container3 = $(".Container").eq(2);
+		 var $container4 = $(".Container").eq(3);
+		 var tl = new TimelineLite();
+		 tl.from($container1, 0.8, {top: 50, opacity:0})
+		 .from($container2, 0.8, {top: 50, opacity:0})
+		 .from($container3, 0.8, {top: 50, opacity:0})
+		 .from($container4, 0.8, {top: 50, opacity:0})
+		  });
+	</script>
+
+</body>
+</html>

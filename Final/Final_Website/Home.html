@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Unknown Game Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/GeneralStyle.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Home.css">
+</head>
+
+<body>
+	<header>
+		<H1><a href="Home.html">The Unknown Game Blog</a></H1>
+		<nav>
+			<div class="dropdown">
+			  <div onclick="toggleDropdown()" class="dropbtn"></div>
+			  <ul id="myDropdown" class="dropdown-content">
+			    <li><a href="GameRecommendation.html">Game Recommendation</a></li>
+			    <li><a href="GameAnalysis.html">Game Analysis</a></li>
+			    <li><a href="CreativityBlog.html">Creativity Blog</a></li>
+			  </ul>
+			</div>
+
+			<ul id="NavBar">
+				<li><a href="GameRecommendation.html">Game Recommendation</a></li>
+				<li><a href="GameAnalysis.html">Game Analysis</a></li>
+				<li><a href="CreativityBlog.html">Creativity Blog</a></li>
+			</ul>
+		</nav>
+		<script src="js/dropdown.js"></script>
+	</header>
+
+	<main>
+		<!-- image slider -->
+		<div class="SlideshowContainer">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="Slide">
+		    <img src="Images/SlideLimbo.jpg">
+		    <a href="GameRecommendation.html"><H3>Recommendation</H3></a>
+		    <H2>Limbo</H2>
+		  </div>
+
+		  <div class="Slide">
+		    <img src="Images/SlideCubeEscape.jpg">
+		    <a href="GameRecommendation.html"><H3>Recommendation</H3></a>
+		    <H2>Cube Escape</H2>
+		  </div>
+
+		  <div class="Slide">
+		    <img src="Images/SlideASM.jpg">
+		    <a href="GameRecommendation.html"><H3>Recommendation</H3></a>
+		    <H2>Always Sometimes Monsters</H2>
+		  </div>
+
+		  <div class="Slide">
+		    <img src="Images/SlideStardew.jpg">
+		    <a href="GameRecommendation.html"><H3>Recommendation</H3></a>
+		    <H2>Stardew Valley</H2>
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="PrevButtom" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="NextButtom" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="Dot" onclick="currentSlide(1)"></span> 
+		  <span class="Dot" onclick="currentSlide(2)"></span> 
+		  <span class="Dot" onclick="currentSlide(3)"></span>
+		  <span class="Dot" onclick="currentSlide(4)"></span>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				var slideIndex = 1;
+				autoSlides();
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function autoSlides(){
+					showSlides(slideIndex);
+					slideIndex++;
+					var timeoutVar = setTimeout(autoSlides, 2500);
+					//$(".Slide").mouseover(function(){
+					//	clearTimeout(timeoutVar);
+					//});
+					// $(".Slide").mouseout(function(){
+					// 	timeoutVar = setTimeout(autoSlides, 2500);
+					// });
+				}
+
+				function showSlides(n) {
+					var i;
+					var dots = document.getElementsByClassName("Dot");
+					var slides = document.getElementsByClassName("Slide");
+					if (n > slides.length) {
+						slideIndex = 1
+					}    
+					else if (n < 1) {
+						slideIndex = slides.length
+					}
+
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+				}
+			});
+		</script>
+
+
+		<div class="Container">
+
+			<div class="PostContainer">
+				<img src="Images/CSquare300Orwell.jpg">
+				<a href="CreativityBlog.html" class="PostPage"><H3>Blog</H3></a>
+				<a href="CreativityBlog/Blog1.html" class="SinglePost"><H2>Play Something</H2></a>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/ASquare300Inside.jpg">
+				<a href="GameAnalysis.html" class="PostPage"><H3>Analysis</H3></a>
+				<a href="GameAnalysis/Analysis1.html" class="SinglePost"><H2>World Building in INSIDE</H2></a>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/CSquare300Persepolis.jpg">
+				<a href="CreativityBlog.html" class="PostPage"><H3>Blog</H3></a>
+				<a href="CreativityBlog/Blog2.html" class="SinglePost"><H2>Good Watches for the Week</H2></a>
+			</div>
+
+			<div class="PostContainer">
+				<img src="Images/CSquare300GGJ.jpg">
+				<a href="CreativityBlog.html" class="PostPage"><H3>Blog</H3></a>
+				<a href="CreativityBlog/Blog3.html" class="SinglePost"><H2>Global Game Jam at NYU Game Center</H2></a>
+			</div>
+		</div>
+
+	</main>
+	<div id="RunAnimation">
+		<div id="RunningBox">
+		</div>
+	</div>
+
+	<script>
+		var boxPosition = 0;
+		var boxSpeed = 10;
+		function BoxRun() {
+			var box = document.getElementById("RunningBox");
+			boxPosition += boxSpeed;
+			box.style.left = boxPosition + 'px';
+		}
+	</script>
+
+	<footer>
+		<p>This site is a random personal game blog.</p>
+		<p>Contact: yx1137@nyu.edu</p>
+		<p>&copy;TheUnknownGameBlog</p>
+		<div class="RunButton">
+			<button id="RunButton" onclick="BoxRun()">Run!</button>
+		</div>
+		
+	</footer>
+</body>
+</html>
