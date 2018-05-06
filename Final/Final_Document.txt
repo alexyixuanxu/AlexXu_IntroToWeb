@@ -1,6 +1,6 @@
 Explanation of some source code:
 dropdown menu onclick:
-/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleDropdown() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -61,7 +61,7 @@ TweenMax.to(box, 1,
 })
 
 Issues encountered:
--To center the dropdown menu
+-To center the dropdown menu (fixed by having negative margin)
 -Problems embedding p5 sketches
 
 What I learned:
@@ -69,7 +69,8 @@ What I learned:
 -dropdown menus on click
 -jquery animations
 -greensock timeline animations
+-negative margins
 
-Next steps:
+What I could do in the future:
 -I could use SASS to improve my code, making it more clean.
 -There should be easier way to make a drop down menu using jquery that could simplify my code.
