@@ -73,7 +73,7 @@
 		</div>
 
 		<script>
-			var slideIndex = 1;
+			var slideIndex = 0;
 			var hoverOnSlides = false;
 			
 			autoSlides();
@@ -117,8 +117,9 @@
 			function autoSlides(){
 				var timeoutVar = setTimeout(autoSlides, 2500);
 				if (hoverOnSlides==false){
-					showSlides(slideIndex);
 					slideIndex++;
+					showSlides(slideIndex);
+					
 				}
 			}
 
